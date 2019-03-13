@@ -1,7 +1,7 @@
 package string;
 
 /**
- * Created by songfuxing on 2018/8/30.
+ * 数字反转
  */
 public class Reverse {
     public int reverse(int x) {

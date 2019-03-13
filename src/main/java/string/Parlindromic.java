@@ -5,7 +5,7 @@ package string;
  */
 public class Parlindromic {
     public static void main(String[] args) {
-        String s = "abbbb";
+        String s = "abbbbaaa";
         Parlindromic parlindromic = new Parlindromic();
         System.out.println(parlindromic.outerCircle(s));
     }
@@ -29,7 +29,7 @@ public class Parlindromic {
             rightIndex ++;
         }
         int temp = rightIndex;
-        while(leftIndex < 0 && rightIndex + 1 < c.length && c[leftIndex - 1] == c[rightIndex + 1]) {
+        while(leftIndex > 0 && rightIndex + 1 < c.length && c[leftIndex - 1] == c[rightIndex + 1]) {
             rightIndex ++ ;
             leftIndex --;
         }
